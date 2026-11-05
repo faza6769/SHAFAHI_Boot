@@ -4,8 +4,11 @@ public class boot
     private int plaetze;
     private boolean motorisiert;
 
-    
-    
+     public boot(String name, int plaetze, boolean motorisiert) {
+        this.name = name;
+        this.plaetze = plaetze;
+        this.motorisiert = motorisiert;
+    }
     
     // erstellen von Get un Set Methoden 
     public String getName(){
