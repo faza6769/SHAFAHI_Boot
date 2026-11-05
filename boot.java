@@ -18,4 +18,15 @@ public class boot
         return motorisiert;
     }
   
+    // erstellen von SetMethoden 
+    
+    public void setName(String neuName){
+        name = neuName;
+    }
+    public void setPlaetze (int neuPlaetze ){
+        plaetze = neuPlaetze;
+    }
+    public void setMotorisiert( boolean neuMotorisiert){
+        motorisiert = neuMotorisiert;
+    }
 }
