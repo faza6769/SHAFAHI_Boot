@@ -34,7 +34,11 @@ public class boot
     }
     
     public void printBoot(){
-        System.out.println(name + " Boot: " + plaetze + " Plaetze - " + motorisiert);
+        if(motorisiert == true){
+            System.out.println(name + " Boot: " + plaetze + " Plaetze - " + "motorbot");
+        }else{
+            System.out.println(name + " Boot: " + plaetze + " Plaetze - " + "ohne bot");
+        }
     }
     
 
