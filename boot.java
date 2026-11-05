@@ -27,13 +27,24 @@ public class boot
         name = neuName;
     }
     public void setPlaetze (int neuPlaetze ){
-        plaetze = neuPlaetze;
+        if(neuPlaetze < 1 || neuPlaetze > 5000){
+            // Der wert von plaetze wird auf default gesetzt. 
+            plaetze = 0;
+            // eine Fehlermeldung wird ausgegeben, dass die Werte in gültigen Bereich gegeben werden müssen.
+            System.out.println("Die Werte müssen zwischen 1 und 5000 liegen ");
+        }else{
+            plaetze = neuPlaetze;
+        }
+        
     }
     public void setMotorisiert( boolean neuMotorisiert){
         motorisiert = neuMotorisiert;
     }
     
     public void printBoot(){
+        if(plaetze < 1 || plaetze > 5000){
+            System.out.println("Die Werte müssen zwischen 1 und 5000 liegen ");
+        }
         if(motorisiert == true){
             System.out.println(name + " Boot: " + plaetze + " Plaetze - " + "motorbot");
         }else{
