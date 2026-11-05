@@ -4,12 +4,13 @@ public class boot
     private int plaetze;
     private boolean motorisiert;
 
-     public boot(String name, int plaetze, boolean motorisiert) {
+    public boot(String name, int plaetze, boolean motorisiert) {
         this.name = name;
         this.plaetze = plaetze;
         this.motorisiert = motorisiert;
-    }
-    
+        printBoot();
+     }
+
     // erstellen von Get un Set Methoden 
     public String getName(){
         return name;
@@ -21,8 +22,7 @@ public class boot
         return motorisiert;
     }
   
-    // erstellen von SetMethoden 
-    
+    // erstellen von SetMethoden     
     public void setName(String neuName){
         name = neuName;
     }
@@ -32,4 +32,11 @@ public class boot
     public void setMotorisiert( boolean neuMotorisiert){
         motorisiert = neuMotorisiert;
     }
+    
+    public void printBoot(){
+        System.out.println(name + " Boot: " + plaetze + " Plaetze - " + motorisiert);
+    }
+    
+
+    
 }
